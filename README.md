@@ -4,6 +4,8 @@ php递归无限级树形数据
 ```PHP
 include dirname(__DIR__).'/Tree.php';
 $data = include __DIR__."/data.php";
+//设置主键、节点名称
+//Tree::setConfig($primary = '', $parentId = '', $child = '');
 print_r(Tree::makeTree($data));
 ```
 运行结果
