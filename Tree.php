@@ -16,9 +16,9 @@ class Tree
     //子节点名称
     private static $child    = 'child';
     public static function setConfig($primary = '', $parentId = '', $child = ''){
-        if(!empty($primary)) self::$primary  = $primary;
+        if(!empty($primary))  self::$primary  = $primary;
         if(!empty($parentId)) self::$parentId = $parentId;
-        if(!empty($child))   self::$child    = $child;
+        if(!empty($child))    self::$child    = $child;
     }
 
     /**
@@ -56,13 +56,12 @@ class Tree
     public static function findChild(&$data, $index)
     {
         $childs = [];
-		foreach ($data as $k => $v){
-            echo self::$parentId;exit;
-			if($v[self::$parentId] == $index){
-				$childs[]  = $v;
-                unset($v);
-			}
+	foreach ($data as $k => $v){
+		if($v[self::$parentId] == $index){
+			$childs[]  = $v;
+                	unset($v);
 		}
-		return $childs;
+	}
+	return $childs;
     }
 }
