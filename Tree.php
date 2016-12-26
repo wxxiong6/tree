@@ -1,7 +1,7 @@
 <?php
 /**
  +------------------------------------------------------------------------------
- * Tree
+ * Tree 构建tree状数据
  +------------------------------------------------------------------------------
  * @author    wxxiong@gmail.com
  * @version   v1.1
@@ -9,12 +9,30 @@
  */
 class Tree
 {
-    //主键
+    /**
+     * 主键名称
+     * @var string
+     */
     private static $primary = 'id';
-    //父键
+
+    /**
+     * 父键名称
+     * @var string
+     */
     private static $parentId = 'parent_id';
-    //子节点名称
+
+    /**
+     * 子节点名称
+     * @var string
+     */
     private static $child    = 'child';
+
+    /**
+     * 修改主键名称、父键名称、子节点名称
+     * @param string $primary
+     * @param string $parentId
+     * @param string $child
+     */
     public static function setConfig($primary = '', $parentId = '', $child = ''){
         if(!empty($primary))  self::$primary  = $primary;
         if(!empty($parentId)) self::$parentId = $parentId;
@@ -56,12 +74,12 @@ class Tree
     public static function findChild(&$data, $index)
     {
         $childs = [];
-	foreach ($data as $k => $v){
-		if($v[self::$parentId] == $index){
-			$childs[]  = $v;
-                	unset($v);
+		foreach ($data as $k => $v){
+			if($v[self::$parentId] == $index){
+				$childs[]  = $v;
+                unset($v);
+			}
 		}
-	}
-	return $childs;
+		return $childs;
     }
 }
