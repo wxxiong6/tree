@@ -55,7 +55,7 @@ class Tree
         foreach($childs as $k => &$v)
         {
             if(empty($data)) break;
-            $child = self::makeTree($data, $v['id']);
+            $child = self::makeTree($data, $v[self::$primary]);
             if(!empty($child))
             {
                 $v[self::$child] = $child;
