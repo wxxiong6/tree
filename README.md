@@ -1,6 +1,9 @@
 php递归无限级树形数据
 ====  
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+
+
 ## 使用使用方法
 ```PHP
 include dirname(__DIR__).'/Tree.php';
