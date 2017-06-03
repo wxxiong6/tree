@@ -11,7 +11,7 @@
         
         "php": ">=5.4"
     },
-    
+    "license": "xwx",
      "autoload": {
             "psr-4": {
                 "Tree\\": "src/"
