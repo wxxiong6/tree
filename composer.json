@@ -1,6 +1,12 @@
 {
     "name": "wxxiong6/tree",
-    "minimum-stability": "dev",
+    "description": "tree data 使用递归生成树形数据，简单实用",
+   "keywords": [
+    "tree",
+    "无限分类",
+    "tree-data"
+  ],
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "xwx",
@@ -11,7 +17,7 @@
         
         "php": ">=5.4"
     },
-    "license": "xwx",
+     "license": "MIT",
      "autoload": {
             "psr-4": {
                 "Tree\\": "src/"
