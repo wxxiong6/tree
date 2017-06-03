@@ -1,12 +1,21 @@
 php递归无限级树形数据
 ====  
 
+## 使用使用方法
 ```PHP
 include dirname(__DIR__).'/Tree.php';
+```
+#### 全部数据数组
+```PHP
 $data = include __DIR__."/data.php";
-//设置主键、节点名称
-//Tree::setConfig($primary = '', $parentId = '', $child = '');
-print_r(Tree::makeTree($data));
+```
+#### 设置主键、parent标识名称 字节点名称
+```PHP 
+Tree::setConfig($primary = '', $parentId = '', $child = '');
+```
+#### 生成tree data
+```PHP
+Tree::makeTree($data);
 ```
 运行结果
 
@@ -17,7 +26,7 @@ Array
    (
       [id] = 1
        [city] = 中国
-        [parent_id] = 0
+       [parent_id] = 0
         [child] = Array
          (
                  [0] = Array
