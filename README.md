@@ -1,7 +1,4 @@
-
-[![Github All Releases](https://img.shields.io/badge/php-%3E%3D5.4-green.svg)]()
 [![GitHub forks](https://img.shields.io/github/forks/wxxiong6/tree.svg)](https://github.com/wxxiong6/tree/network)
-[![GitHub stars](https://img.shields.io/github/stars/wxxiong6/tree.svg?style=plastic)](https://github.com/wxxiong6/tree/stargazers)
 [![Packagist](https://img.shields.io/packagist/v/wxxiong6/tree.svg?style=plastic)]()
 
 php递归无限级树形数据
@@ -9,23 +6,18 @@ php递归无限级树形数据
 
 ## 使用使用方法
 ```PHP
+//引入类
 include dirname(__DIR__).'/Tree.php';
-```
-#### 全部数据数组
-```PHP
+//数据数组
 $data = include __DIR__."/data.php";
-```
-#### 设置主键、parent标识名称 字节点名称
-```PHP 
+//设置主键、parent标识名称 子节点名称
 Tree::setConfig($primary = '', $parentId = '', $child = '');
-```
-#### 生成tree data
-```PHP
+//生成tree
 Tree::makeTree($data);
 ```
 运行结果
 
-``` PHP
+``` 
 Array
 (
     [0] = Array
