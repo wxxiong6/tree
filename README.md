@@ -1,20 +1,24 @@
 [![GitHub forks](https://img.shields.io/github/forks/wxxiong6/tree.svg)](https://github.com/wxxiong6/tree/network)
 [![Packagist](https://img.shields.io/packagist/v/wxxiong6/tree.svg?style=plastic)]()
 
-php递归无限级树形数据
-====  
+## tree
+- 使用递归把数据构造成树形结构数据
+- 常用于菜单、权限、分类等功能实现
+  
+## Installation
+```shell
+composer require wxxiong6/tree
+```
 
-## 使用使用方法
+
+## Usage
 ```PHP
-//引入类
-include dirname(__DIR__).'/Tree.php';
-//数据数组
-$data = include __DIR__."/data.php";
 //设置主键、parent标识名称 子节点名称
 Tree::setConfig($primary = '', $parentId = '', $child = '');
 //生成tree
 Tree::makeTree($data);
 ```
+
 运行结果
 
 ``` 
