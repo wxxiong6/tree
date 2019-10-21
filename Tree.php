@@ -89,9 +89,9 @@ class Tree
     {
         $children = [];
         foreach ($data as $k => $v) {
-            if ($v[self::$parentId] === $index) {
+             if (strval($v[self::$parentId]) === strval($index)) {
                 $children[] = $v;
-                unset($v);
+                unset($data[$k]);
             }
         }
 
