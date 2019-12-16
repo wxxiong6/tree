@@ -1,4 +1,6 @@
 language: php
+git:
+  clone: false
 matrix:
   fast_finish: true
   include:
@@ -25,11 +27,7 @@ cache:
     - $HOME/.composer/cache
 
 install:
-  # install composer dependencies
-  - travis_retry composer self-update
-  - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - travis_retry composer update $DEFAULT_COMPOSER_FLAGS
-  - travis_retry rm wxxiong6/tree -rvf
   - travis_retry composer require wxxiong6/tree
 
 
