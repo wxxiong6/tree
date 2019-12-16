@@ -1,12 +1,13 @@
 <?php
 /**
- *
- * Tree 构建tree状数据
+ * Tree 构建tree状数据.
  *
  * @author    wxxiong@gmail.com
- * @version   v1.1
  *
+ * @version   v1.1
  */
+
+namespace wxxiong6\tree;
 
 class Tree
 {
@@ -54,8 +55,9 @@ class Tree
     /**
      * 生成Tree.
      *
-     * @param array  $data
-     * @param int $index
+     * @param array $data
+     * @param int   $index
+     *
      * @return array
      */
     public static function makeTree(&$data, $index = 0)
@@ -83,13 +85,14 @@ class Tree
      *
      * @param array  $data
      * @param number $index
+     *
      * @return array
      */
     public static function findChild(&$data, $index)
     {
         $children = [];
         foreach ($data as $k => $v) {
-             if (strval($v[self::$parentId]) === strval($index)) {
+            if ((string) ($v[self::$parentId]) === (string) $index) {
                 $children[] = $v;
                 unset($data[$k]);
             }
