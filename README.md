@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/wxxiong6/tree.svg?branch=master)](https://travis-ci.org/wxxiong6/tree)
 [![GitHub forks](https://img.shields.io/github/forks/wxxiong6/tree.svg)](https://github.com/wxxiong6/tree/network)
 [![Packagist](https://img.shields.io/packagist/v/wxxiong6/tree.svg)](https://packagist.org/packages/wxxiong6/tree)
 ![Packagist](https://img.shields.io/packagist/dt/wxxiong6/tree)
@@ -23,7 +24,7 @@ Tree::makeTree($data);
 
 运行结果
 
-``` 
+```
 Array
 (
     [0] = Array

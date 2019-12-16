@@ -1,0 +1,29 @@
+{
+    "name": "wxxiong6/tree",
+    "description": "tree data 使用递归生成树形数据，简单实用",
+    "keywords": [
+        "tree",
+        "无限分类",
+        "tree-data"
+    ],
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "xwx",
+            "email": "wxxiong6@gmail.com"
+        }
+    ],
+    "require": {
+
+        "php": ">=5.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "wxxiong6\\tree\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "wxxiong6\\tree\\Tests\\": "tests/" }
+    }
+}

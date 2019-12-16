@@ -55,13 +55,14 @@ class Tree
     /**
      * 生成Tree.
      *
-     * @param array $data
-     * @param int   $index
+     * @param array $data  需要处理的数据（二维数组）
+     * @param int   $index 初始parent id
      *
      * @return array
      */
     public static function makeTree(&$data, $index = 0)
     {
+        if (empty($data)) return [];
         $children = self::findChild($data, $index);
         if (empty($children)) {
             return $children;
