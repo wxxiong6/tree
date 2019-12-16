@@ -23,7 +23,6 @@ cache:
   directories:
     - vendor
     - $HOME/.composer/cache
-    -
 bofore_script:
   - composer install
   - cd tests
