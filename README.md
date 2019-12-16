@@ -1,5 +1,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/wxxiong6/tree.svg)](https://github.com/wxxiong6/tree/network)
-[![Packagist](https://img.shields.io/packagist/v/wxxiong6/tree.svg?style=plastic)]()
+[![Packagist](https://img.shields.io/packagist/v/wxxiong6/tree.svg?style=plastic)](https://packagist.org/packages/wxxiong6/tree)
+![Packagist](https://img.shields.io/packagist/dt/wxxiong6/tree)
 
 ## tree
 - 使用递归把数据构造成树形结构数据
