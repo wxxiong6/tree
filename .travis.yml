@@ -11,9 +11,9 @@ matrix:
     - php: "7.0"
     - php: "5.6"
     - php: "5.5"
-          dist: trusty
+      dist: trusty
     - php: "5.4"
-          dist: trusty
+      dist: trusty
 env:
   global:
     - DEFAULT_COMPOSER_FLAGS="--prefer-dist --no-interaction --no-progress --optimize-autoloader"
