@@ -28,5 +28,7 @@ install:
   - travis_retry composer require wxxiong6/tree
   - travis_retry composer update $DEFAULT_COMPOSER_FLAGS
   - composer -h
+  - ls -l
 
-script: phpunit -c phpunit.xml
+
+script: /home/travis/.phpenv/versions/7.4/bin/phpunit -c phpunit.xml
