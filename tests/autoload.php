@@ -5,6 +5,5 @@
  * Time: 11:32
  */
 
-//require_once dirname(__DIR__) . "/src/Tree.php";
-require_once dirname(__DIR__) . "vendor/autoload.php";
+require_once dirname(__DIR__) . "/src/Tree.php";
 $data = require_once __DIR__ . "/data.php";
