@@ -7,11 +7,10 @@ matrix:
     - php: "7.4"
     - php: "7.3"
     - php: "7.2"
-    - php: "7.1"
-    - php: "7.0"
-    - php: "5.6"
+#    - php: "7.1"
+#    - php: "7.0"
+#    - php: "5.6"
     - php: "5.5"
-    - php: "5.4"
 env:
   global:
     - DEFAULT_COMPOSER_FLAGS="--prefer-source --dev --no-interaction --no-progress --optimize-autoloader"
@@ -25,8 +24,8 @@ cache:
     - $HOME/.composer/cache
 
 install:
-  - travis_retry composer self-update
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - travis_retry composer require wxxiong6/tree
   - travis_retry composer update $DEFAULT_COMPOSER_FLAGS
 
-script: ./vendor/bin/phpunit -c phpunit.xml
+script: phpunit -c phpunit.xml
