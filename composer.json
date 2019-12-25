@@ -6,7 +6,7 @@
         "无限分类",
         "tree-data"
     ],
-    "minimum-stability": "stable",
+
     "authors": [
         {
             "name": "xwx",
@@ -17,7 +17,7 @@
         "php": ">=5.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.8.34"
+        "phpunit/phpunit": "~8.0"
     },
     "license": "MIT",
     "autoload": {

@@ -6,5 +6,5 @@
  */
 
 use wxxiong6\tree\Tree;
-include __DIR__ . "/autoload.php";
+include __DIR__ . "/bootstrap.php";
 var_dump(Tree::makeTree($data));

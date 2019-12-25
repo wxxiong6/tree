@@ -29,6 +29,7 @@ install:
   - travis_retry composer update $DEFAULT_COMPOSER_FLAGS
   - composer -h
   - ls -l
+  - ls ./vendor
 
 
-script: /home/travis/.phpenv/versions/7.4/bin/phpunit -c phpunit.xml
+script: ./vendor/bin/phpunit -c phpunit.xml
