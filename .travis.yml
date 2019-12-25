@@ -27,5 +27,6 @@ install:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - travis_retry composer require wxxiong6/tree
   - travis_retry composer update $DEFAULT_COMPOSER_FLAGS
+  - composer -h
 
 script: phpunit -c phpunit.xml
