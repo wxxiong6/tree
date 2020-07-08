@@ -18,7 +18,7 @@ class TreeTest extends TestCase
         $data = require __DIR__ . '/data.php';
         Tree::setConfig('id', 'parent_id', 'children');
         $tree = Tree::makeTree($data);
-        $this->assertIsArray($tree[0]['children']);
+        $this->assertNotEmpty($tree[0]['children']);
     }
 
     public function testMakeTree()
