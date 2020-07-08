@@ -2,8 +2,7 @@
 <phpunit bootstrap="./vendor/autoload.php">
 <testsuites>
     <testsuite name="Tree Test Suite">
-        <!--<directory>./tests</directory>-->
-        <file>tests/TreeTest.php</file>
+        <file>tests/wxxiong6/tree/TreeTest.php</file>
     </testsuite>
 </testsuites>
 </phpunit>
