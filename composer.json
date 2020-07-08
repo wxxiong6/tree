@@ -23,10 +23,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "wxxiong6\\tree\\": "src"
+            "wxxiong6\\tree\\": "src/wxxiong6/tree"
         }
     },
     "autoload-dev": {
-        "psr-4": { "wxxiong6\\tree\\\\tests\\": "tests/" }
+        "psr-4": { "wxxiong6\\tree\\\\tests\\": "tests/wxxiong6/tree" }
     }
 }
