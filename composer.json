@@ -10,7 +10,8 @@
     "authors": [
         {
             "name": "xwx",
-            "email": "wxxiong6@gmail.com"
+            "email": "wxxiong6@gmail.com",
+            "homepage": "https://github.com/wxxiong6"
         }
     ],
     "require": {
@@ -22,16 +23,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "wxxiong6\\tree\\": "src/"
+            "wxxiong6\\tree\\": "src"
         }
     },
     "autoload-dev": {
-        "psr-4": { "wxxiong6\\tree\\Tests\\": "tests/" }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+        "psr-4": { "wxxiong6\\tree\\\\tests\\": "tests/" }
+    }
 }
