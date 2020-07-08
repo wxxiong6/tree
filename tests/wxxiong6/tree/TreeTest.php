@@ -40,7 +40,7 @@ class TreeTest extends TestCase
         $data = require __DIR__ . '/data.php';
         $tree = Tree::makeTree($data);
         $children = Tree::findChild($tree, 0);
-        $this->assertIsArray($children);
+        $this->assertNotEmpty($children);
         $this->assertEquals('中国', $children[0]['city']);
     }
 }
