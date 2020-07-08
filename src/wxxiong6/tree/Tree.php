@@ -60,7 +60,9 @@ class Tree
      */
     public static function makeTree(&$data, $index = 0)
     {
-        if (empty($data)) return [];
+        if (empty($data)) {
+            return [];
+        }
         $children = self::findChild($data, $index);
         if (empty($children)) {
             return $children;
